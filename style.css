@@ -82,6 +82,17 @@ h2{font-size:clamp(45px,5.2vw,75px);line-height:.98;letter-spacing:-.04em}
 .order-schedule span{text-align:right}
 .order-section .btn.primary{background:#fff;color:var(--orange)}
 .big{padding:17px 25px}
+.connect-section{background:var(--paper)}
+.connect-section .section-head{margin-bottom:42px}
+.connect-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.connect-card{min-width:0;display:flex;align-items:center;gap:16px;padding:24px;background:var(--cream);border:1px solid var(--line);transition:transform .2s,border-color .2s,box-shadow .2s}
+.connect-card:hover{transform:translateY(-4px);border-color:var(--orange);box-shadow:0 14px 28px rgba(45,33,26,.08)}
+.connect-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center}
+.connect-icon svg{display:block;width:42px;height:42px}
+.connect-detail{min-width:0;display:flex;flex:1;flex-direction:column;gap:5px}
+.connect-detail strong{font-family:"Playfair Display",serif;font-size:19px}
+.connect-detail small{overflow-wrap:anywhere;color:#806f63;font-size:12px}
+.connect-arrow{color:var(--orange);font-size:18px}
 footer{background:#241b16;color:#fff5eb;padding:70px 8vw 30px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
 .footer-brand img{width:115px;height:65px;object-fit:contain;}
 .footer-brand p{font-size:13px;margin-top:12px}
@@ -92,6 +103,7 @@ footer{background:#241b16;color:#fff5eb;padding:70px 8vw 30px;display:grid;grid-
   .hero{grid-template-columns:1fr;padding:65px 7vw 30px;text-align:center}.hero-copy{margin:auto}.hero-art{height:430px;order:-1}.sun{width:330px;height:330px}.floating-risol{width:90%}.price-badge{right:5%;bottom:10%;width:82px;height:82px}.price-badge strong{font-size:29px}
   .hero-actions{justify-content:center}.hero-desc{margin:25px auto 30px}
   .section{padding:85px 7vw}.story{grid-template-columns:1fr;gap:55px}.section-head{display:block}.section-note{margin-top:18px}.product-card{grid-template-columns:1fr}.product-photo{height:350px}.product-info{padding:38px 30px}.product-info h3{font-size:45px}
+  .connect-cards{grid-template-columns:1fr;gap:12px}.connect-card{padding:20px}
   .quote-section,.order-section{padding:105px 7vw}footer{grid-template-columns:1fr;padding:55px 7vw 25px}.footer-links{justify-content:flex-start;gap:60px}.copyright{grid-column:1}
 }
 @media(max-width:520px){
