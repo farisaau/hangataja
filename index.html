@@ -13,14 +13,14 @@
 <body>
   <header class="navbar">
     <a href="#home" class="brand"><img src="logo.png" alt="Hangat Aja"></a>
-    <nav>
+    <nav aria-label="Navigasi utama">
       <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
       <a href="#about">About</a>
+      <a href="#menu">Menu</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="nav-order" href="#order">Order Now <span>↗</span></a>
-    <button class="menu-btn" aria-label="Buka menu">☰</button>
+    <button class="menu-btn" aria-label="Buka menu" aria-expanded="false">☰</button>
   </header>
 
   <main>
@@ -28,11 +28,6 @@
       <div class="hero-copy">
         <p class="eyebrow">RISOL MAYO • HANGAT AJA</p>
         <h1>Sekali risol,<br><em>tetap risol.</em></h1>
-        <p class="hero-desc"></p>
-        <div class="hero-actions">
-          <a href="#order" class="btn primary">Pesan Sekarang <span>→</span></a>
-          <a href="#menu" class="text-link">Lihat menu</a>
-        </div>
       </div>
       <div class="hero-art">
         <div class="sun"></div>
@@ -43,7 +38,15 @@
     </section>
 
     <section class="marquee" aria-label="Keunggulan produk">
-      <div>GURIH <span>✦</span> RENYAH <span>✦</span> CREAMY <span>✦</span> GURIH <span>✦</span> RENYAH <span>✦</span> CREAMY <span>✦</span></div>
+      <span class="visually-hidden">Gurih, renyah, creamy.</span>
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-group">
+          <div class="marquee-cycle"><span>GURIH</span><span class="marquee-star">✦</span><span>RENYAH</span><span class="marquee-star">✦</span><span>CREAMY</span><span class="marquee-star">✦</span></div>
+        </div>
+        <div class="marquee-group">
+          <div class="marquee-cycle"><span>GURIH</span><span class="marquee-star">✦</span><span>RENYAH</span><span class="marquee-star">✦</span><span>CREAMY</span><span class="marquee-star">✦</span></div>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="story section">
@@ -54,11 +57,6 @@
         <p class="eyebrow">A LITTLE BITE OF HAPPINESS</p>
         <h2>Sesederhana risol,<br><em>senikmat itu.</em></h2>
         <p>Hangat Aja hadir buat kamu yang suka camilan sederhana dengan rasa yang nggak sederhana. Kulitnya renyah, isiannya gurih dan creamy, paling enak dinikmati saat masih hangat.</p>
-        <div class="ingredient-row">
-          <div><b>01</b><span>Telur</span></div>
-          <div><b>02</b><span>Sosis</span></div>
-          <div><b>03</b><span>Mayo</span></div>
-        </div>
       </div>
     </section>
 
@@ -94,11 +92,24 @@
       <div class="order-inner">
         <p class="eyebrow">READY TO SNACK?</p>
         <h2>Jangan cuma<br><em>dibayangin.</em></h2>
-        <p style="font-weight: bold;">penasaran sama rasanya, langsung aja order.</p>
+        <p class="order-intro">Yuk, pesan risol mayo favoritmu sekarang!</p>
         <div class="order-schedule">
-          <p><strong>Time Order</strong><span>Open PO (Pre-order), Selasa – Jumat</span></p>
-          <p><strong>Risol Ready</strong><span>Senin, 10AM-4PM </span></p>
-          <p><strong>Pengambilan / Pengantaran</strong><span>Senin, 10AM-4PM</span></p>
+          <div class="schedule-heading">
+            <div>
+              <h3>Jadwal Pemesanan</h3>
+              <p>Catat jadwalnya, jangan sampai kelewatan!</p>
+            </div>
+          </div>
+          <div class="schedule-cards">
+            <div class="schedule-card open-po">
+              <span class="schedule-card-number" aria-hidden="true">01</span>
+              <div><strong>Open PO</strong><span>Selasa–Jumat</span></div>
+            </div>
+            <div class="schedule-card ready">
+              <span class="schedule-card-number" aria-hidden="true">02</span>
+              <div><strong>Ready</strong><span>Setiap hari Senin</span></div>
+            </div>
+          </div>
         </div>
         <a class="btn primary big" href="https://wa.me/+6283852896100" target="_blank" rel="noopener">Pesan via WhatsApp <span>↗</span></a>
       </div>
